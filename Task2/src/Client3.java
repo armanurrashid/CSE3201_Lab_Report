@@ -7,7 +7,7 @@ public class Client3 {
         Socket client_socket = new Socket("127.0.0.1",22222);
 
         ObjectOutputStream oos = new ObjectOutputStream(client_socket.getOutputStream());
-        String message = "pow";
+        String message = "square";
         oos.writeObject(message);
         try{
             while(true){
